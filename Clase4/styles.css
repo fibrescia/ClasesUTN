@@ -1,0 +1,51 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Kurale&family=Raleway:ital,wght@0,600;1,100&display=swap');
+
+
+*{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+/* el selector * aplica a todos los elementos del HTML*/
+
+body{
+    background-color: skyblue;
+}
+/*unidades de tipografias: 
+    1rem, 1em --> 16px
+px - % - vh - vw */
+/* se recomienda no hacer tipografias menosres a 12/14px*/
+
+h1{
+    font-family: 'Kurale', serif;
+    font-size: 4em; /* va a ser 4*16px*/
+    text-decoration: underline;
+    text-shadow: 10px 10px 10px gray;
+}
+
+/* se recomienda no usar mas de 2 tipografias por sitio */
+
+h2{
+    font-family: 'Raleway', sans-serif;;
+}
+
+.subtitulo{
+    font-size: 2em;
+    font-weight: 600;
+    text-transform:uppercase; /*lowercase - capitalize */
+}
+
+p{
+    text-align:center; /* permite alinear el texto de manera horizontal */
+}
+a{
+    text-decoration: none; /* la propiedad none saca el subrayado que trae el <a> de base */
+
+}
+ul{
+    list-style-type: none
+}
+button{
+    font-family: 'Courier New', Courier, monospace;
+    box-shadow: inset 10px -5px 15px #f90, 10px 5px red; /* el inset le da sombra interna, sin el inset seria sombra externa. con la ',' le agrego otra sombra, se pueden agregar todas las q quiera */
+    padding: 15px;
+}

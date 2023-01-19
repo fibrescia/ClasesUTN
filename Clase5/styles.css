@@ -1,0 +1,57 @@
+body{
+    background-color:blanchedalmond;
+}
+.container{
+    background-color: skyblue;
+    height: 300px;
+    width: 500px;
+}
+.cube{
+    width: 150px;
+    height: 150px;
+    background-color: brown;
+    border: 5px solid black;
+    margin: 10px;
+    font-size: large;
+    font-weight: bolder;
+}
+.one{
+    background-color: orange;
+    position: relative; /* permite modificar la ubicacion de un elemento con top,left,right,bottom*/
+    top: 100px;
+    left: 200px;
+}
+.two{
+    background-color: violet;
+    position: absolute; /*busca el padre con positiion relative mas cercano y lo toma como referencia para ubicarse si no hay ninguno toma al body*/
+    bottom: 5px;
+    right: 30px;
+}
+.three{
+    background-color: yellowgreen;
+    position: fixed;/*igual al absolute pero toma de referencia al body, cuando muevo la pantalla me sigue a todos lados*/
+    bottom: 10px;
+    right: 10px;
+    z-index:1 ;/*indica que tan encima esta en una superposicion, se le ponen numeros a mayor numero mas encima esta*/
+}
+.four{
+    position: sticky;/* es como el fixed pero a dif de este ocupa lugar en la pantalla no como el fixed que no te toma el lugar*/
+    top: 0px;
+    z-index: 2;
+}
+
+.fondo{
+    width: 300px;
+    height: 300px;
+    position: relative;
+}
+.texto-interno{
+    position: absolute;
+    top:50px;
+    left: 45px;
+
+}
+img{
+    width: 300px;
+    height: 300px;
+}

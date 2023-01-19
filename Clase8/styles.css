@@ -1,0 +1,18 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+img{
+    width: 20%;
+}
+.efecto1:hover{
+    filter: blur(3px);
+}
+
+.efecto2:hover{
+    filter: invert(100%);
+}
+
+.efecto3:hover{
+    filter: saturate(3);
+}

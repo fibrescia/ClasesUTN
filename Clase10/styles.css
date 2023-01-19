@@ -1,0 +1,168 @@
+*{
+    margin: 0px;
+    padding: 0px;
+}
+
+html{
+    scroll-behavior: smooth;
+
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+
+}
+
+/* esto significa que a las "a" que son sus hijos le de es margen */
+nav > a {
+    margin-left: 15px;
+
+}
+
+.hamburguesa{
+    color: black;
+    display:none;
+    cursor: pointer;
+    font-size: 32px;
+
+}
+/* como a los 450 px se rompe hacemos algo */
+@media(max-width:500px){
+    /* body{
+        background-color: red;
+    /* } sirve para corroborar errore
+    */  
+    nav {
+      display: none; 
+    }
+ 
+    .hamburgesa{
+        display: block;
+        color: black;
+    }
+    .img-texto{
+        flex-wrap: wrap;
+    }
+    .texto{
+        display: block;
+    }
+
+    /* header{
+        display: flex;
+        flex-direction: column;
+    } */
+}
+
+.contenedorHero{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: linear-gradient(59deg, rgba(63,60,98,0.4) 2%,rgba(62,5,16,0.4)83%), url(./ricardo-gomez-angel-IM9QoGao7Wo-unsplash.jpg);
+}
+
+.tituloHero{
+    font-size: 4rem ;  /* /no usar px para texto, texto siempre rem. para imagens utilizar %/ */
+    text-transform: uppercase;
+    color: white;
+    padding: 1.5rem 0; 
+    text-align: center;
+    }
+.textoHero{
+    font-size: 1rem;
+    color: white;
+    max-width: 50%;
+    text-align: center;
+    padding-bottom: 2rem; /* /se puede usar margin tmb/ */
+}
+
+.sbutton{
+    padding: 0.9rem 1.6rem;
+    border: 1px solid white;
+    color: black;
+    font-size: 1.25rem;
+    text-transform: uppercase;
+    cursor:pointer;
+    background-color: white;
+}
+
+.sbutton:hover{
+    background: transparent;
+/*     color: transparent; */
+    border-color: red;
+}
+
+.img-a{
+    width: 30%;
+}
+.img-texto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.btn-about{
+    background-color: #2eabbb;
+    padding: 5px;
+    color: white;
+    font-size: 1rem;
+    letter-spacing: 0.5rem;
+
+}
+.texto-about{
+    text-align: center;
+    text-transform: uppercase;
+    padding: 3rem 0px;
+    letter-spacing: 0.5rem;
+    font-size: 2.5rem;
+   
+}
+span{
+    color: #2eabbb;
+}
+.texto{
+    flex-basis: 40%;
+    margin-left: 3rem;
+}
+.about{
+    padding-bottom: 3rem;
+}
+.servicios{
+    background-color: rgb(226, 226, 226);
+}
+.serv{
+    display: flex;
+    justify-content: center;
+}
+.contenedor-serv{
+    margin-left: 1rem;
+    flex-basis: 20%;
+}
+
+.iconoc{
+    font-size: 2rem;
+    background-color: #2eabbb;
+    padding: 1rem;
+    height: 2rem;
+}
+.galeria{
+    display: flex;
+    flex-wrap: wrap;
+}
+img{
+    width: 25%;
+    flex-basis: 25%;
+}
+
+@media (max-width:900px){
+    img{
+        flex-basis:50%;
+    }
+}

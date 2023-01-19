@@ -1,0 +1,50 @@
+/* manerea de escribir comentarios en CSS /*
+/* manera recomendada de hacer css (con otro archivo que sea .css */ 
+/* las escrituras de css se llaman selectores */
+
+p{
+    color: brown!important; /* *1 */
+
+} /* se va a aplicar a todos los <p> */
+
+/* selectores de clase para configurar los 'class' (se escribe ".nombredelaclase" */
+
+.textoRojo
+{color: #FF0000;}
+
+.fondoNegro
+{background-color: black;}
+
+/* selectores de id (se escribe "#nombredelid" */
+
+#texto1{
+    background-color: rgb(100,50,20);
+}
+
+/* *1- el !important le da prioridad a algo, pero hay que intentar no usarlo porque sino es un quilombo todo el codigo */
+
+button{
+    background-color: rgba(200,240,0,0.3);
+    height: 100px;
+    padding-bottom: 100px;
+    border: black 5px double;
+    border-radius: 12px; /*te permite redondear el borde*/
+    margin-right: 15px;
+    margin-left: 50px;
+    display: block;
+}
+
+/* para definir colores se puede usar:
+hexadecimal
+rgb - rgba (el rgba tiene transparencia)
+colores predefinidos */
+
+img{
+    width: 25vw;
+    
+
+}
+
+/* width y height tienen unidades en %, px(pixeles) o     vh, vw (% de ancho y alto de pantalla) se recomienda modificar una sola de las dos, la otra se adapta sola para que no se deforme la img */ 
+
+/* margin(genera distancia entre elementos) padding(agrega relleno a algun lado o en todos) y border(color, grosor y tipo de borde(hay muchas)) son para 
